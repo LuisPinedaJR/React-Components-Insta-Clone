@@ -7,14 +7,17 @@
   background: #ffffff;
 }
 .search-form {
-  width: 150px;
+  width: 250px;
   font-size: 14px;
 }
 .search-form input {
+  width: 280px;
   text-align: center;
   color: #262626;
 }
 .image-wrapper {
+  display: flex;
+
   height: 50px;
 }
 
