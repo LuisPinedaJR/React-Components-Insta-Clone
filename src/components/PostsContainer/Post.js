@@ -13,30 +13,20 @@ const Post = props => {
   // const [state, setState] = useState(dummyData)
   //const [postState, postSetState] = useState(post)
 
-  const [postLikes, setLikes] = useState(props.data.likes)
+  const [postLikes, setLikes] = useState(props.likes)
 
   return (
     <div className="post-border">
-      <PostHeader
-        username={props.data.username}
-        thumbnailUrl={props.data.thumbnailUrl}
-      />
+      <PostHeader username={props.username} thumbnailUrl={props.thumbnailurl} />
       <div className="post-image-wrapper">
-        <img
-          alt="post thumbnail"
-          className="post-image"
-          src={props.data.imageUrl}
-        />
+        <img alt="post thumbnail" className="post-image" src={props.imageurl} />
       </div>
       <LikeSection
-        likes={props.data.likes}
+        likes={props.likes}
         postLikes={postLikes}
         setLikes={setLikes}
       />
-      <CommentSection
-        postId={props.data.imageUrl}
-        comments={props.data.comments}
-      />
+      <CommentSection postId={props.imageurl} comments={props.comments} />
     </div>
   )
 }

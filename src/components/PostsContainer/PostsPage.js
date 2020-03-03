@@ -14,7 +14,16 @@ const PostsPage = () => {
       {/* map through data here to return a Post and pass data as props to Post */
       state.map(post => {
         console.log(post)
-        return <Post data={post} setState={setState} key={post.username} />
+        return (
+          <Post
+            username={post.username}
+            thumbnailurl={post.thumbnailUrl}
+            imageurl={post.imageUrl}
+            likes={post.likes}
+            comments={post.comments}
+            key={post.username}
+          />
+        )
       })}
     </div>
   )
