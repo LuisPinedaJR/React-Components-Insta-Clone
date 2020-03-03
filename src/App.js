@@ -17,7 +17,6 @@ const App = () => {
       {/* Add imported components here to render them */}
       <SearchBarContainer />
       <PostPage />
-      <CommentSectionContainer />
     </div>
   )
 }

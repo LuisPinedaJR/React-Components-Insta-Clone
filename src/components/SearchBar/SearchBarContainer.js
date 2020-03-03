@@ -1,18 +1,16 @@
 // You do not need to change any code in this file
-import React from "react";
-import "./SearchBar.css";
+import React from 'react'
+import './SearchBar.css'
 
 const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
         <i className="fab fa-instagram" />
+        <p>Instagram</p>
       </div>
       <form className="search-form">
-        <input
-          type="text"
-          placeholder="Search"
-        />
+        <input type="text" placeholder="Search" />
       </form>
       <div className="social-wrapper">
         <div className="social">
@@ -26,7 +24,7 @@ const SearchBar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SearchBar;
+export default SearchBar
